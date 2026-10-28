@@ -1,0 +1,7 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org"><body>
+<nav th:fragment="nav" class="nav">
+ <a class="brand" th:href="@{/}">TAMBO <span>Inventario</span></a>
+ <div class="links"><a th:href="@{/}">Panel</a><a th:href="@{/productos}">Productos</a><a th:href="@{/movimientos}">Movimientos</a><a th:href="@{/alertas}">Alertas de stock</a></div>
+ <form th:action="@{/logout}" method="post"><button class="logout" type="submit">Cerrar sesión</button></form>
+</nav>
+</body></html>

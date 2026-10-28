@@ -1,0 +1,5 @@
+<!DOCTYPE html><html lang="es" xmlns:th="http://www.thymeleaf.org"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Acceso | Tambo Inventario</title><link rel="stylesheet" th:href="@{/css/app.css}"></head>
+<body class="login-page"><main class="login-card"><div class="logo">T</div><h1>Control de inventario</h1><p>Tiendas Tambo · Sistema académico</p>
+<div class="alert error" th:if="${param.error}">Usuario o contraseña incorrectos.</div><div class="alert success" th:if="${param.logout}">Sesión cerrada correctamente.</div>
+<form th:action="@{/login}" method="post"><label>Usuario</label><input name="username" autocomplete="username" required><label>Contraseña</label><input type="password" name="password" autocomplete="current-password" required><button class="primary full" type="submit">Ingresar al sistema</button></form>
+<small>Credenciales configurables mediante TAMBO_USER y TAMBO_PASSWORD.</small></main></body></html>
